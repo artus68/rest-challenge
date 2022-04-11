@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "28f1f92a-d62e-43dc-8575-45c6d4cc5a5c",
+		"name": "challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get persons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/challenge/rs/persons",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"challenge",
+						"rs",
+						"persons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add persons 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<persons>\r\n  <person>\r\n    <name>John Doe Sr</name>\r\n\t<gender>m</gender>\r\n\t<age>53</age>\r\n  </person>\r\n  <person>\r\n    <name>John Doe</name>\r\n\t<gender>m</gender>\r\n\t<age>23</age>\r\n  <person>\r\n    <name>John Doe Jr</name>\r\n\t<gender>m</gender>\r\n\t<age>2</age>\r\n  </person>\r\n  </person>\r\n</persons>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/challenge/rs/persons/add",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"challenge",
+						"rs",
+						"persons",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add persons 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<persons>\r\n  <person>\r\n    <name>John Doe Sr</name>\r\n\t<gender>m</gender>\r\n\t<age>53</age>\r\n  </person>\r\n  <person>\r\n    <name>John Doe</name>\r\n\t<gender>n</gender>\r\n\t<age>23</age>\r\n  <person>\r\n    <name>John Doe Jr</name>\r\n\t<gender>m</gender>\r\n\t<age>2</age>\r\n  </person>\r\n  </person>\r\n</persons>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/challenge/rs/persons/add",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"challenge",
+						"rs",
+						"persons",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add persons 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<persons>\r\n  <person>\r\n    <name>Jane Doe Sr</name>\r\n\t<gender>f</gender>\r\n\t<age>47</age>\r\n  </person>\r\n  <person>\r\n    <name>Jane Doe</name>\r\n\t<gender>f</gender>\r\n\t<age>17</age>\r\n  </person>\r\n</persons>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/challenge/rs/persons/add",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"challenge",
+						"rs",
+						"persons",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add persons 4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<persons>\r\n  <person>\r\n    <name>John Doe</name>\r\n\t<gender>m</gender>\r\n\t<age>53</age>\r\n  </person>\r\n  <person>\r\n    <name>Jane Doe</name>\r\n\t<gender>f</gender>\r\n\t<age>47</age>\r\n  </person>\r\n  <person>\r\n    <name>John-Jane Doe</name>\r\n\t<gender>n</gender>\r\n\t<age>23</age>\r\n  </person>\r\n</persons>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/challenge/rs/persons/add",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"challenge",
+						"rs",
+						"persons",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit persons",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<persons>\r\n  <person>\r\n    <name>John Doe</name>\r\n\t<gender>m</gender>\r\n\t<age>53</age>\r\n  </person>\r\n  <person>\r\n    <name>Jane Doe</name>\r\n\t<gender>f</gender>\r\n\t<age>47</age>\r\n  </person>\r\n  <person>\r\n    <name>John-Jane Doe</name>\r\n\t<gender>n</gender>\r\n\t<age>23</age>\r\n  </person>\r\n</persons>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/challenge/rs/persons/edit",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"challenge",
+						"rs",
+						"persons",
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get statistics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/challenge/rs/statistics",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"challenge",
+						"rs",
+						"statistics"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
